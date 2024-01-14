@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Patricia_Adelina_mobila.AboutPage"
+             Title="AboutPage">
+    <VerticalStackLayout Spacing="10" Margin="10">
+        <HorizontalStackLayout Spacing="10">
+            <Image Source="cinema.png"
+                   SemanticProperties.Description="Program Cinema"
+                   HeightRequest="64" />
+            <Label FontSize="22" FontAttributes="Bold" Text="Program Cinema" VerticalOptions="End" />
+            <Label FontSize="22" Text="v1.0" VerticalOptions="End" />
+        </HorizontalStackLayout>
+        <Label Text="Iti oferim o gama variata de filme si un program variat, astfel incat sa poti avea timp sa vizionezi filmele tale preferate"  FontSize="25" FontFamily="fantasy" />
+        <Label Text="CALL CENTER: 40 314 130 040 (apelabil din orice retea nationala, fixa sau mobila)" FontSize="15" FontFamily="fantasy"/>
+        <Label Text="Email:cluj@cinemacity.ro" FontSize="15" FontFamily="fantasy"/>
+    </VerticalStackLayout>
+</ContentPage>

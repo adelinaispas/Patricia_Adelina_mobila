@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Patricia_Adelina_mobila.CinematografPage"
+             Title="Cinematograf">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Editor Placeholder="Indroduceți numele cinematografului" Margin="20"
+                Text="{Binding NumeCinematograf}"
+                HeightRequest="50" />
+            <Editor Placeholder="Introduceți adresa cinematografului" Margin="20"
+                Text="{Binding Adresa}"
+                HeightRequest="50" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button  BackgroundColor="SlateGray"
+                     Text="Salvați Cinematograful" Grid.Column="0"
+                    MaximumWidthRequest="200"
+                    Clicked="OnSaveButtonClicked" />
+                <Button  BackgroundColor="SlateGray"
+                     Text="Ștergeți Cinematograful" Grid.Column="1"
+                    MaximumWidthRequest="200"
+                    Clicked="OnDeleteButtonClicked" />
+
+            </Grid>
+            <Button  BackgroundColor="SlateGray"
+                     Text="Arată pe hartă" 
+                    MaximumWidthRequest="200"
+                    Clicked="OnArataHartaButtonClicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
